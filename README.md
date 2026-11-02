@@ -1,129 +1,71 @@
-﻿# MERN-Library-App
+<div align="center">
 
+# 📚 Library App
 
+A full-stack library app with a React TypeScript frontend and a Spring Boot and MySQL API for searching books.
 
-A modern full-stack task manager built with the MERN stack and styled with TailwindCSS and daisyUI.
+<a href="https://github.com/miladmo68/Library-App"><img src="https://img.shields.io/badge/Source-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source code"></a>
+<a href="https://miladweb.com"><img src="https://img.shields.io/badge/Portfolio-miladweb.com-1E3A8A?style=for-the-badge&logo=aboutdotme&logoColor=white" alt="Portfolio"></a>
 
----
+</div>
 
-## 🔧 Tech Stack
+<p align="center">
+  <img src="./.github/preview.jpg" alt="Library App screenshot" width="100%" />
+</p>
 
-**Front-end**
-- React 18 (with Vite)
-- TailwindCSS 3
-- DaisyUI
-- Axios
+## ✨ Features
 
-**Back-end**
-- Node.js & Express
-- MongoDB with Mongoose
-- dotenv, CORS
+- Search books with pagination
+- Home page with featured books
+- Spring Boot REST API backend
 
----
+## 🛠️ Tech Stack
 
-## 📁 Folder Structure
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![React Router](https://img.shields.io/badge/React%20Router-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white) ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-```
-mern-portfolio-project/
-├── front/      # React frontend (Vite)
-└── back/       # Express + Mongo 
-backend
-```
-
----
-
-## ✅ Prerequisites
-
-- Node.js ≥ 18 installed
-- MongoDB (running locally or MongoDB Atlas)
-
----
+> [!NOTE]
+> This project needs its own backend, database or API keys, so it runs locally rather than as a static demo.
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository
+**Prerequisites:** [Node.js](https://nodejs.org/) 18 or newer · Java 17+ (the Maven wrapper is included) · A running MySQL server
+
+**Clone**
 
 ```bash
-git clone <your-repo-url>
-cd mern-portfolio-project
+git clone https://github.com/miladmo68/Library-App.git
+cd Library-App
 ```
 
-### 2. Set up the Back-end
+**Backend (backend/spring-boot-library)**
 
 ```bash
-cd back
-cp .env.example .env  # Replace with your Mongo URI if needed
-npm install           # Install dependencies
-npm run dev           # Start the Express server (default: http://localhost:5000)
+cd backend/spring-boot-library
+./mvnw spring-boot:run
 ```
 
-### 3. Set up the Front-end
+**frontend/react-library**
 
 ```bash
-cd ../front
-npm install           # Install dependencies
-npm run dev           # Start Vite dev server (default: http://localhost:5173)
+cd frontend/react-library
+npm install
+npm run dev
 ```
 
----
-
-## 🧪 Environment Variables
-
-In the `/back` folder, create a `.env` file:
+## 📁 Project Structure
 
 ```
-MONGO_URI=mongodb://localhost:27017/mern_portfolio_tasks
-PORT=5000
+Library-App/
+├── backend/
+└── frontend/
 ```
 
----
+## 👤 Author
 
-## 🔒 .gitignore
+**Milad Mohammadi** — Frontend-Focused Full-Stack Developer, Toronto 🇨🇦
 
-Add the following to `.gitignore` in both `front/` and `back/`:
+[![Website](https://img.shields.io/badge/Website-miladweb.com-FF6A00?style=flat-square&logo=googlechrome&logoColor=white)](https://miladweb.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-miladmo68-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miladmo68/)
+[![GitHub](https://img.shields.io/badge/GitHub-miladmo68-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/miladmo68)
 
-```
-node_modules/
-.env
-dist/
-```
-
----
-
-## 🌐 Visit App
-
-Once both servers are running:
-
-- Front-end: http://localhost:5173
-- Back-end API: http://localhost:5000/api/tasks
-
----
-
-## 🛰 Deployment Tips
-
-- Front-end → Vercel or Netlify
-- Back-end → Render, Fly.io, or Railway
-- Make sure to set environment variables in deployment dashboards
-
----
-
-## 🙌 Features
-
-- Create & delete tasks
-- Responsive UI with daisyUI
-- RESTful API
-- MongoDB for persistence
-
----
-
-<p align="center">
-  <b>👨‍💻 Author: Milad Mohammadi</b><br>
-  🌐 <a href="https://miladweb.com">Website</a> • 💼 <a href="https://linkedin.com/in/miladmo68">LinkedIn</a> • 🐙 <a href="https://github.com/miladmo68">GitHub</a>
-</p>
-
-## 📸 Preview
-
-Coming soon: Add a screenshot or link to deployed demo.
-
-Happy coding!
-
+<p align="center"><sub>If you like this project, consider giving it a ⭐</sub></p>
